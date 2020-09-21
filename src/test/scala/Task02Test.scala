@@ -1,22 +1,22 @@
 import org.scalatest.flatspec.AnyFlatSpec
 
-class Task02Test extends AnyFlatSpec{
-  "Task02" should "return true for a given palindrome with odd number of digits" in {
+class Task02Test extends AnyFlatSpec {
+  "Task02" must "return true for a given palindrome with odd number of digits" in {
     assert(Task02.solution(121))
   }
-  it should "return false for negative numbers" in {
+  it must "return false for negative numbers" in {
     assert(!Task02.solution(-121))
   }
-  it should "return false for a number ending with 0" in {
+  it must "return false for a number ending with 0" in {
     assert(!Task02.solution(10))
   }
-  it should "return false for a non-palindrome number with even number of digits" in {
+  it must "return false for a non-palindrome number with even number of digits" in {
     assert(!Task02.solution(4324))
   }
-  it should "return false for a non-palindrome number with odd number of digits" in {
+  it must "return false for a non-palindrome number with odd number of digits" in {
     assert(!Task02.solution(45853))
   }
-  it should "return true for a given palindrome with even number of digits" in {
+  it must "return true for a given palindrome with even number of digits" in {
     assert(Task02.solution(432234))
   }
 }
