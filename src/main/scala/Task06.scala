@@ -1,6 +1,12 @@
 import scala.annotation.tailrec
 
-object Task06 extends App {
+/**
+ * Input: two non-empty linked lists representing positive numbers.
+ * Digits are stored in reversed order, every node contain one digit.
+ * Return the sum of the numbers as a new linked list.
+ */
+
+object Task06 {
   case class ListNode(
      var x: Int = 0,
      var next: ListNode = null
@@ -28,8 +34,6 @@ object Task06 extends App {
         ListNode(number, null)
       }
     }
-
     buildListNode(getNumberFromListNode(l1) + getNumberFromListNode(l2))
   }
-
 }

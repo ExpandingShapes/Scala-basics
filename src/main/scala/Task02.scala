@@ -1,6 +1,11 @@
 import scala.annotation.tailrec
 
-object Task02 extends App {
+/**
+ * Check whether a number is a palindrome.
+ * Try not to convert number -> string
+ */
+
+object Task02 {
   def solution(x: Int): Boolean = {
     val DIVIDE_FOR_MAX_INT = 1000000000
     @tailrec

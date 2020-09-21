@@ -1,6 +1,10 @@
 import scala.annotation.tailrec
 
-object Task08 extends App {
+/**
+ * In a string, find the maximum length of a substring with unique characters.
+ */
+
+object Task08 {
   def solution(s: String): Int = {
     @tailrec
     def iter(

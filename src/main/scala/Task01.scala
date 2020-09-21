@@ -1,6 +1,13 @@
 import scala.annotation.tailrec
 
-object Task01 extends App {
+/**
+ * Input is Array[Int] and target: Int. Find in the array two numbers
+ * whose sum equals target and return their indexes in a new array.
+ * For every input, there is only one solution.
+ * Using the same array element twice is not allowed.
+ */
+
+object Task01 {
   def solution(nums: Array[Int], target: Int): Array[Int] = {
     @tailrec
     def checkSum(array: Array[Int], n: Option[Int]):  Array[Int] = {

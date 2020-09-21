@@ -1,6 +1,10 @@
-object Task03 extends App {
-  //return 0 if the string is empty or
-  // no whitespaces found which means there is one and only word
+/**
+ * In a string containing letters and spaces,
+ * return the length of the last word in the string.
+ * If there is no last word, return 0.
+ */
+
+object Task03 {
   def solution(s: String): Int = if(s.isEmpty || !s.exists(_.isWhitespace)) 0 else
     s.length - s.lastIndexWhere(_.isWhitespace) - 1
 }

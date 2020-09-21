@@ -1,4 +1,4 @@
-/***
+/**
   * Given a sorted Array[Int] and then rotated in an unknown point
   * e.g. [1, 2, 3, 4, 5, 6, 7] -> [4, 5, 6, 7, 1, 2, 3] and
   * a target value of type Int, search for target's index in the array.

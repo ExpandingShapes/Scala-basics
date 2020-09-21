@@ -1,4 +1,10 @@
-object Task10 extends App {
+/**
+ * Input is n x n 2D matrix (two dimensional array).
+ * Turn it 90 degrees clockwise. The given matrix must be changed,
+ * creating a new 2D matrix is not allowed.
+ */
+
+object Task10 {
   def solution(matrix: Array[Array[Int]]): Array[Array[Int]] = {
     val matrixSize = matrix.length
     val firstRow = matrix(0)
@@ -48,17 +54,5 @@ object Task10 extends App {
 //    for(i <- 1 to 4) {
 //      if(i % 2 == 1) updateColumn() else updateRow()
 //    }
-  }
-val b = solution(Array(
-    Array(5, 1, 9, 11),
-    Array(2, 4, 8, 10),
-    Array(13, 3, 6, 7),
-    Array(15, 14, 12, 16),
-  ))
-  for (i <- 0 to 3) {
-    for ( j <- 0 to 3) {
-      print(" " + b(i)(j));
-    }
-    println();
   }
 }
