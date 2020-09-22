@@ -12,7 +12,10 @@ class Task10Test extends AnyFlatSpec {
       Array(8, 5, 2),
       Array(9, 6, 3)
     )
-    assert(Task10.solution(matrix1) sameElements res1)
+    assert(
+      Task10.solution(matrix1).map(_.mkString(",")).mkString("|") ==
+        res1.map(_.mkString(",")).mkString("|")
+    )
   }
   it must "return rotated 4 x 4 array" in {
     val matrix2 = Array(
@@ -27,6 +30,9 @@ class Task10Test extends AnyFlatSpec {
       Array(12, 6, 8, 9),
       Array(16, 7, 10, 11)
     )
-    assert(Task10.solution(matrix2) sameElements res2)
+    assert(
+      Task10.solution(matrix2).map(_.mkString(",")).mkString("|") ==
+        res2.map(_.mkString(",")).mkString("|")
+    )
   }
 }
